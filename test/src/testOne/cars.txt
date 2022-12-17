@@ -1,0 +1,9 @@
+8
+1, BMW, 1995, 525i, Metallic Kashmir Beige, 28, 19, 3483, 6, 21.4, big
+2, BMW, 1995, 540i, Oxford Green, 23, 14, 3726, 8, 21.4, big
+3, BMW, 1993, M5, Alpine White III, 23, 12, 3803, 6, 23.8, big
+4, Alpina, 1991, B10 Bi-turbo, Avus Blue, 21, 13.5, 3395, 6, 29.1, big
+5, BMW, 1981, M1, Hellrot Red, 23, 12, 2866, 6, 30.7, big
+6, BMW, 1988, 750i, Bronzit, 21.6, 11.9, 3968, 12, 23.7, small
+7, BMW, 2006, 330i, Schwartz Black, 30, 20, 3560, 6, 16.7, small
+8, BMW, 1994, 850CSi, Daytona Violet, 20, 12, 4167, 12, 23.8, small

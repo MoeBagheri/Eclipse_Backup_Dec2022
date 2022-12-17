@@ -1,0 +1,23 @@
+HW # 5 is based on HW  # 4. You need to modify the following code from the book
+
+Part 1: modify methods related to add; discussed in detail (use recFind(.))
+
+Part 2: level-order traversal for the BST
+
+Part 1) rewrite recAdd --> so that it uses the code similar to containsXXX --> find the parent node to add a new node for building a BST
+
+== from HW # 4 ==
+
+The BT tree has been built.
+
+Traverse? (1: preorder, 2: inorder, 3: postorder)
+
+> 3
+
+postorder: 7, 8,3,4,1,9,5,6,2,0
+
+Given the traversal above, a BST has been built using new addNode(.) methods.
+
+postorder of the BST: 0, 2, 1, 6,5,4,3, 9,8,7
+
+levelorder of the BST: 7,3,8, 1,4,9, 0,2,5, 6

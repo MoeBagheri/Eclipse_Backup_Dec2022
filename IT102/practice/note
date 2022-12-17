@@ -1,0 +1,15 @@
+if we call fcn(3):
+n:3
+print before recursion
+fcn(2) #will be called 
+print after recursion
+------------------------
+if we call fcn(2)
+n:2
+print before recursion
+fcn(1)
+print after recursion
+------------------------
+fcn(1)
+n:1
+print base

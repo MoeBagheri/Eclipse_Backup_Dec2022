@@ -1,0 +1,37 @@
+CSC_200 (ENG_111 (SAT, ACT), MTH_161 (MTE_1-9)),  ENG_111 (SAT, ACT), CST_100, MTH_167 (MTE_1-9), SDV_100, SDV_101, CSC_201 (CSC_200 (ENG_111 (SAT, ACT), MTH_161 (MTE_1-9))),  ENG_112 (ENG_111 (SAT, ACT)), MTH_263 (MTH_167 (MTE_1-9)), CSC_202 (CSC_201 (CSC_200 (ENG_111 (SAT, ACT), MTH_161 (MTE_1-9))), MTH_263 (MTH_167 (MTE_1-9))), MTH_264 (MTH_263 (MTH_167 (MTE_1-9)))
+
+You should assume that the input file is always well- formed. In other words, there is no need to check the validity of the input file.
+
+Hard requirements:
+
+1) read an input file using a scanner to build a linked list
+
+2) use an enhanced version of LLNode<T>; -3 otherwise
+
+3) use recursions to print the list of POS; -3 if not employed
+
+4) all java files must be in a java package named with your last name and first initial, such as wangy_hw1;
+
+5) your zip file must include your own input file (such as courses.txt); -3 otherwise
+
+More hint: you have to read the file up there
+
+CSC200
+   ENG 111
+        SAT
+        ACT
+ 
+   MTH 161 
+        MTE 1-9
+
+ENG 111
+    SAT
+    ACT
+    
+CSC 100 
+MTH 167
+    MTE1-9
+SDV 100                 
+SDV 101
+CSC 201
+    CSC 200

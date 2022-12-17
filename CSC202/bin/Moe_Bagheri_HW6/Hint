@@ -1,0 +1,73 @@
+Build a hash table of size 1000.
+
+test data: hw6_input.txtPreview the document
+
+part 1: buckets and chaining (page 523): using linked list
+
+part 2: use a BST for collision
+
+1. Must use code from the book; must use a fixed-size array as the HT
+
+2. Must implement removal (current code from the book does not support removal)
+
+3. Do not insert MapEntry obj with the same key
+
+3. Output the following statistics (one for list; one for BST):
+
+            a. Average chain length
+
+            b. Standard deviation of chain length
+
+            c. Number of MapEntry objects of duplicate keys
+
+4. Determine the total time needed to search all keys (contained in the txt file) in the hash table (one for list; one for BST).
+
+The timer is in package
+
+public final class System
+
+long start = System.currentTimeMillis();
+// ...
+long finish = System.currentTimeMillis();
+long timeElapsed = finish - start;
+ 
+== sample out session
+The input file has been read.
+ 
+Chain stats below:
+average chain length:
+SD:
+# of duplicates:
+time needed to search all keys:
+ 
+BST stats below:
+average number of tree element:
+SD:
+# of duplicates:
+time needed to search all keys:
+ 
+Question:
+1: if everything left of the hash tag is the key, and Lithium has 
+   the same key as Three, should Three replace Lithium, or fail to insert,
+   or something else?
+   
+   they are doplicate do not use them just coiunt them
+   
+   
+2: Should we write or own hash function from scratch?  Any particular one?
+use the hash function from java
+
+
+
+
+
+3: the provided data file has 371 lines.
+With a hash table of size 1,000 and using the java
+hash function, over half the buckets are empty, and the remaining
+buckets mostly have 1 item (with the most being 3).
+Because of this, I'm not seeing any performance difference
+between using a linked list as a bucket vs a tree as a bucket.
+Was I supposed to use a different data file, fewer buckets,
+or was the intent not to create a hash table with tree buckets,
+but instead to create a tree map?
+

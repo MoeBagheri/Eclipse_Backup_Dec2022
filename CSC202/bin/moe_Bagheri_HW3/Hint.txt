@@ -1,0 +1,46 @@
+Rewrite the  LargeInt application so that it performs additions, subtractions, 
+and multiplications, using mainstream Java Collections API.
+
+Hard requirements:
+
+
+
+// 1. can we use the java.util.LinkedList or should we create our own from scratch?
+// 2. what does "incomplete implementation of additions" mean?  is something missing?
+// 3. How do we employ LargeIntHW3<Character> given that we can't construct a T from
+//       a char, and we cant convert a T to a char?
+//   eg: if we want to represent an A, we can't do new T('A')
+//   if we have a value T ch; we can't do (char)ch;
+//   how should we assign an int value to a particular T ch?
+
+// Queue<T>  ; = new Queue<T>();
+// Character hex = 'F';
+// characters.add(hex);
+
+1. replace LargeIntList using Deque and LinkedList; use interfaces properly
+
+2. your largeIntHw3 object must accommodate base-17 integers
+
+3. incomplete implementation of additions, subtractions, multiplications: -1, -2, -3
+
+4. employ LargeIntHw3<Character>
+
+5. must _not_ use BigInteger objects
+
+6. use an iterator<.> or decendingIterator<.>
+
+==
+
+First base-17 integer?
+
+DEED
+
+Second base-17 integer?
+
+-BEEF
+
+Addition:  xxxx
+
+Subtraction: yyyy
+
+Multiplication: zzzz

@@ -1,0 +1,54 @@
+CSC Final:
+No linked list
+No magic Number
+No BST
+He is going to change the file and use different
+file with the same format
+
+** have to find the file: 
+what is the file name of the file you want to use user
+has to enter the file name
+
+for now take the input file we already have 
+has to read it and perform a sort (write Charts)
+sorting by key
+how long it it going to take for to do 6 sorts: selection sort,
+bubble sort, short sort, instruction sort, merge sort,
+quick sort (last 2 should be faster)
+make sure you get the 6 sorts working even by changing the file
+take the main from hw6
+
+** after reading the file take it and create map entries then sort it
+u do not need to write merge sort and short sorts code just
+fix it from sorts.java use ME to sort
+each entry goes to map entry once u read the file
+each file u get map entry value array turns into map entry
+
+** comparison of map entry of that map tree
+compare the keys only
+
+timing for all this is required 
+
+** also print:
+-what do you want to print? 
+user answers:
+
+print the sorted key
+top five
+top end elementals 
+.
+.
+.we have to guess what else he might want
+
+
+
+
+
+find middle one for QS
+assume that file is in your project direction
+slection sort
+time 
+number of swaps
+
+merge sort 
+time and number of swaps

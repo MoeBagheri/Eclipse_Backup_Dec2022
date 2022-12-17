@@ -1,0 +1,16 @@
+15
+1, BMW, 1995, 525i, Metallic Kashmir Beige, 28, 19, 3483, 6, 21.4
+2, BMW, 1995, 540i, Oxford Green, 23, 14, 3726, 8, 21.4
+3, BMW, 1993, M5, Alpine White III, 23, 12, 3803, 6, 23.8
+4, Alpina, 1991, B10 Bi-turbo, Avus Blue, 21, 13.5, 3395, 6, 29.1
+5, BMW, 1981, M1, Hellrot Red, 23, 12, 2866, 6, 30.7
+6, BMW, 1988, 750i, Bronzit, 21.6, 11.9, 3968, 12, 27
+7, BMW, 2006, 330i, Schwartz Black, 30, 20, 3560, 6, 16.7
+8, BMW, 1994, 850CSi, Daytona Violet, 20, 12, 4167, 12, 23.8
+9, DeLorean, 1981, DMC-12, Stainless Steel, 21.5, 16, 2718, 6, 13.7
+10, Porsche, 1987, 944, Red, 21.8, 16, 2778, 4, 21.2
+11, Porsche, 1988, 959S, Silver, 17.6, 8.2, 3499, 6, 22.5
+12, Ferrari, 1991, Testarossa, Testarossa Red, 16.7, 9.7, 3598, 12, 30.4
+13, Ferrari, 1991, F40, Testarossa Red, 18.6, 10.8, 2756, 8, 31.7
+14, Lancia, 1983, 037, Red, 21.6, 14.2, 2932, 4, 18.5
+15, Toyota, 2007, Corolla, Beige, 41, 32, 2550, 4, 13.2

@@ -1,0 +1,116 @@
+Rewrite the TSquare.java file from the ch03.fractals package to: 
+1) prompt the user to enter an (x, y) coordinate, and 
+2) generate an image that depicts a path of squares from the center of the image to the
+ (x, y) coordinate. If a path cannot be found, output "no path found."
+
+Hard requirements:
+
+1) use a stack-based algorithm
+
+2) remove all recursive calls from TSquare
+
+3) use LinkedStack (in package ch02.stacks) as the backbone of your stack-based implementation
+
+4) use Square objects (self_referential structure, just like LLNode<T>)
+
+=====
+
+Sample output session:
+
+coordinate?
+
+ > 123, 45
+
+path exists; see file xyz.png
+
+continue?
+
+y
+
+coordinate?
+
+34, 567
+
+no path
+
+continue?
+
+n
+
+bye
+
+ 
+
+ 
+
+ 
+
+== use the code below as a starting point
+
+//*********************************************************************
+// TSquare.java By Dale/Joyce/Weems Chapter 3
+//
+// Creates a jpg file containing a recursive TSquare.
+// Run argument 1: full name of target jpg file
+//
+//********************************************************************
+package ch03.fractals;
+
+import java.awt.image.*;
+import java.awt.Color;
+import java.io.*;
+import javax.imageio.*;
+
+public class TSquare {
+static final int SIDE = 1000; // image is SIDE X SIDE
+static BufferedImage image = new BufferedImage(SIDE, SIDE, BufferedImage.TYPE_INT_RGB);
+static final int WHITE = Color.WHITE.getRGB();
+static final int BLACK = Color.BLACK.getRGB();
+
+private static void drawSquare(int x, int y, int s, int myColor)
+// center of square is x,y length of side is s
+{
+if (s <= 0) // base case
+return;
+else {
+// determine corners
+int left = x - s / 2;
+int top = y - s / 2;
+int right = x + s / 2;
+int bottom = y + s / 2;
+
+// recursively paint squares at the corners
+int myNextColor = myColor - 100000;
+drawSquare(left, top, s / 2, myNextColor);
+drawSquare(left, bottom, s / 2, myNextColor);
+drawSquare(right, top, s / 2, myNextColor);
+drawSquare(right, bottom, s / 2, myNextColor);
+
+for (int i = left; i < right; i++)
+for (int j = top; j < bottom; j++) {
+image.setRGB(i, j, myColor);
+}
+
+}
+}
+
+public static void main(String[] args) throws IOException {
+String fileOut = "helloSquares.png";
+
+// make image black
+for (int i = 0; i < SIDE; i++)
+for (int j = 0; j < SIDE; j++) {
+image.setRGB(i, j, BLACK);
+}
+
+// first square
+// drawSquare(SIDE/2, SIDE/2, SIDE/2);
+// first square
+int myColor = WHITE;
+drawSquare(SIDE / 2, SIDE / 2, SIDE / 4, myColor);
+
+// save image
+File outputfile = new File(fileOut);
+ImageIO.write(image, "jpg", outputfile);
+}
+}

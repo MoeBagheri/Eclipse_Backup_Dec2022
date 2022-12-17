@@ -1,0 +1,34 @@
+Write a Bottle class.  
+The Bottle will have one private int that represents the countable value in the Bottle.
+ Please use one of these names: cookies, marbles, M&Ms, pennies, nickels, dimes or pebbles.
+ The class has these 14 methods: 
+ 
+ read()(please use a while loop to prompt for an acceptable value), 
+ set(int), set(Bottle), get(), 
+ (returns the value stored in Bottle), add(Bottle), subtract(Bottle), multiply(Bottle), divide(Bottle), 
+ add(int), subtract(int), multiply(int), divide(int), equals(Bottle), and 
+ 
+ toString()(toString() method 
+ 
+ 
+ 
+ will be given in class).  All add, subtract, multiply and divide methods return a Bottle.  
+ This means the demo code b2 = b3.add(b1) brings into the add method a Bottle b1 which is added to b3.  
+ Bottle b3 is the this Bottle.  The returned bottle is a new bottle containing the sum of b1 and b3.  
+ The value of b3 (the this bottle) is not changed. 
+ Your Bottle class must guarantee bottles always have a positive value and never exceed a 
+ maximum number chosen by you.  These numbers are declared as constants of the class.
+  Use the names MIN and MAX. The read() method should guarantee a value that does not violate
+   the MIN or MAX value.  Use a while loop in the read method to prompt for a new value if necessary. 
+    Each method with a parameter must be examined to determine if the upper or lower bound could be violated.
+      In the case of the add method with a Bottle parameter your code must test for violating the maximum value. 
+       It is impossible for this add method to violate the minimum value of zero.  The method subtract
+        with a Bottle parameter must test for a violation of the minimum zero value but should not test
+         for exceeding the maximum value.  In the case of a parameter that is an integer, all methods
+          must be examined to guarantee a value that does not violate the MIN or MAX values. Consider
+           each method carefully and test only the conditions that could be violated. 
+(2 point) Further in the semester we will use a runtime exception class to guarantee these invariants. 
+public String toString()
+{	
+	return “” + this.pennies;
+}

@@ -1,0 +1,12 @@
+Make a class that represents a rectangle.
+Give it a width and a height. Give it a method to return its area.
+
+Define a class that represents a square. 
+Give it a width and a height.
+Give it a method to return its area.
+
+Give it a constructor that makes the width and height 
+equal (set them to the same value).
+
+Don't allow the width or height to be 
+changed without changing the other as well.
